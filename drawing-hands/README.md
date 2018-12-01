@@ -13,8 +13,8 @@ string me = "\"string me = \"int main() { cout << me.substr(1, 12) << me << ' ';
 int main() { cout << me << ' '; cout << me.substr(14, me.length() - 15); return 0; }
 ```
 
-문제점 : 맨 처음 **string me =** 이 제대로 출력되지 않는다.
-해결방법 : string me 부분을 먼저 한 번 출력해주자.
+* 문제점 : 맨 처음 **string me =** 이 제대로 출력되지 않는다.
+* 해결방법 : string me 부분을 먼저 한 번 출력해주자.
 
 
 ### v2
@@ -23,8 +23,8 @@ string me = "\"string me = \"int main() { cout << me.substr(1, 12) << me << ' ';
 int main() { cout << me.substr(1, 12) << me << ' '; cout << me.substr(14, me.length() - 15); return 0; }
 ```
 
-문제점 : 이스케이프 문자가 제대로 출력되지 않는다.
-해결방법 : [putchar()](https://www.programiz.com/cpp-programming/library-function/cstdio/putchar) 함수를 사용한다.
+* 문제점 : 이스케이프 문자가 제대로 출력되지 않는다.
+* 해결방법 : [putchar()](https://www.programiz.com/cpp-programming/library-function/cstdio/putchar) 함수를 사용한다.
 
 
 ### v3
