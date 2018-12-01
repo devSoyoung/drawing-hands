@@ -1,11 +1,11 @@
 # Drawing Hands
-¸¶¿ì¸®Ã÷ ÄÚ¸£³Ú¸®½º ¿¡¼ÅÀÇ ±×¸². ´©¿ö¼­ ÀÐ´Â ¾Ë°í¸®ÁòÀÌ¶ó´Â Ã¥À» ÀÐ´ø Áß¿¡, P¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ P¸¦ ¸¸µå´Â ³»¿ë°ú ÇÔ²² ¼Ò°³µÇ¾î ÀÖ¾î¼­ ÇÑ ¹ø Á÷Á¢ ¸¸µé¾îºÃ´Ù. ÇÁ·Î±×·¥ ³»ºÎ¿¡¼­ "¸¦ »ç¿ëÇÒ ¼ö ¾ø¾ú´Âµ¥, "¸¦ »ç¿ëÇÏÁö ¾Ê°í "¸¦ Ãâ·ÂÇÏ´Â °ÍÀ» °í¹ÎÇÏ´Â °úÁ¤ÀÌ Àç¹ÌÀÖ¾ú´Ù.
+ë§ˆìš°ë¦¬ì¸  ì½”ë¥´ë„¬ë¦¬ìŠ¤ ì—ì…”ì˜ ê·¸ë¦¼. ëˆ„ì›Œì„œ ì½ëŠ” ì•Œê³ ë¦¬ì¦˜ì´ë¼ëŠ” ì±…ì„ ì½ë˜ ì¤‘ì—, Pë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ Pë¥¼ ë§Œë“œëŠ” ë‚´ìš©ê³¼ í•¨ê»˜ ì†Œê°œë˜ì–´ ìžˆì–´ì„œ í•œ ë²ˆ ì§ì ‘ ë§Œë“¤ì–´ë´¤ë‹¤. í”„ë¡œê·¸ëž¨ ë‚´ë¶€ì—ì„œ "ë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ì—ˆëŠ”ë°, "ë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šê³  "ë¥¼ ì¶œë ¥í•˜ëŠ” ê²ƒì„ ê³ ë¯¼í•˜ëŠ” ê³¼ì •ì´ ìž¬ë¯¸ìžˆì—ˆë‹¤.
 
 
-## ¿À·ù ÇØ°á
-**const char * Çü½ÄÀÇ °ªÀ» »ç¿ëÇÏ¿© char * Çü½ÄÀÇ ¿£ÅÍÆ¼¸¦ ÃÊ±âÈ­ÇÒ ¼ö ¾ø½À´Ï´Ù.**
-vs°¡ ¾÷µ¥ÀÌÆ® µÇ¸é¼­ C, C++À» È¥¿ëÇÏ¿© ¾²¸é ´ÙÀ½°ú °°Àº ¿¡·¯°¡ »ý±ä´Ù°í ÇÑ´Ù.
-char*¸¦ string·Î ¹Ù²ãÁÖ´Ï ¿¡·¯°¡ »ç¶óÁ³´Ù. [(Âü°í¸µÅ©)](https://siriusp.tistory.com/284)
+## ì˜¤ë¥˜ í•´ê²°
+**const char * í˜•ì‹ì˜ ê°’ì„ ì‚¬ìš©í•˜ì—¬ char * í˜•ì‹ì˜ ì—”í„°í‹°ë¥¼ ì´ˆê¸°í™”í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.**
+vsê°€ ì—…ë°ì´íŠ¸ ë˜ë©´ì„œ C, C++ì„ í˜¼ìš©í•˜ì—¬ ì“°ë©´ ë‹¤ìŒê³¼ ê°™ì€ ì—ëŸ¬ê°€ ìƒê¸´ë‹¤ê³  í•œë‹¤.
+char*ë¥¼ stringë¡œ ë°”ê¿”ì£¼ë‹ˆ ì—ëŸ¬ê°€ ì‚¬ë¼ì¡Œë‹¤. [(ì°¸ê³ ë§í¬)](https://siriusp.tistory.com/284)
 
 ### v1
 ```c++
@@ -13,8 +13,9 @@ string me = "\"string me = \"int main() { cout << me.substr(1, 12) << me << ' ';
 int main() { cout << me << ' '; cout << me.substr(14, me.length() - 15); return 0; }
 ```
 
-¹®Á¦Á¡ : ¸Ç Ã³À½ **string me =** ÀÌ Á¦´ë·Î Ãâ·ÂµÇÁö ¾Ê´Â´Ù.
-ÇØ°á¹æ¹ý : string me ºÎºÐÀ» ¸ÕÀú ÇÑ ¹ø Ãâ·ÂÇØÁÖÀÚ.
+ë¬¸ì œì  : ë§¨ ì²˜ìŒ **string me =** ì´ ì œëŒ€ë¡œ ì¶œë ¥ë˜ì§€ ì•ŠëŠ”ë‹¤.
+
+í•´ê²°ë°©ë²• : string me ë¶€ë¶„ì„ ë¨¼ì € í•œ ë²ˆ ì¶œë ¥í•´ì£¼ìž.
 
 
 ### v2
@@ -23,8 +24,9 @@ string me = "\"string me = \"int main() { cout << me.substr(1, 12) << me << ' ';
 int main() { cout << me.substr(1, 12) << me << ' '; cout << me.substr(14, me.length() - 15); return 0; }
 ```
 
-¹®Á¦Á¡ : ÀÌ½ºÄÉÀÌÇÁ ¹®ÀÚ°¡ Á¦´ë·Î Ãâ·ÂµÇÁö ¾Ê´Â´Ù.
-ÇØ°á¹æ¹ý : [putchar()](https://www.programiz.com/cpp-programming/library-function/cstdio/putchar) ÇÔ¼ö¸¦ »ç¿ëÇÑ´Ù.
+ë¬¸ì œì  : ì´ìŠ¤ì¼€ì´í”„ ë¬¸ìžê°€ ì œëŒ€ë¡œ ì¶œë ¥ë˜ì§€ ì•ŠëŠ”ë‹¤.
+
+í•´ê²°ë°©ë²• : [putchar()](https://www.programiz.com/cpp-programming/library-function/cstdio/putchar) í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•œë‹¤.
 
 
 ### v3
@@ -32,4 +34,4 @@ int main() { cout << me.substr(1, 12) << me << ' '; cout << me.substr(14, me.len
 string me = "string me = int main() { cout << me.substr(0, 12); putchar(34); cout << me; putchar(34); cout << ';' << endl << me.substr(12, me.length() - 12) << endl; return 0; }";
 int main() { cout << me.substr(0, 12); putchar(34); cout << me; putchar(34); cout << ';' << endl << me.substr(12, me.length() - 12) << endl; return 0; }
 ```
-¿¡·¯¸¦ ÇØ°áÇÏ°í ÁÙ¹Ù²Þµµ Ãß°¡ÇØÁÖ¾ú´Ù.
+ì—ëŸ¬ë¥¼ í•´ê²°í•˜ê³  ì¤„ë°”ê¿ˆë„ ì¶”ê°€í•´ì£¼ì—ˆë‹¤.
