@@ -25,3 +25,11 @@ int main() { cout << me.substr(1, 12) << me << ' '; cout << me.substr(14, me.len
 
 문제점 : 이스케이프 문자가 제대로 출력되지 않는다.
 해결방법 : [putchar()](https://www.programiz.com/cpp-programming/library-function/cstdio/putchar) 함수를 사용한다.
+
+
+### v3
+```c++
+string me = "string me = int main() { cout << me.substr(0, 12); putchar(34); cout << me; putchar(34); cout << ';' << endl << me.substr(12, me.length() - 12) << endl; return 0; }";
+int main() { cout << me.substr(0, 12); putchar(34); cout << me; putchar(34); cout << ';' << endl << me.substr(12, me.length() - 12) << endl; return 0; }
+```
+에러를 해결하고 줄바꿈도 추가해주었다.
